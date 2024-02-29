@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Penjualan Kue</title>
+  <link rel="stylesheet" href="penjualan.css">
+</head>
+<body>
+  <header>
+    <h1>Penjualan Kue</h1>
+    <nav>
+      <ul>
+        <li><a href="halaman.php">Beranda</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="produk">
+    <div class="container">
+      <h2>Kue Kering Terbaik Kami</h2>
+      <div class="produk-list">
+        <div class="produk-item">
+          <img src="WhatsApp Image 2024-02-23 at 12.59.10.jpeg" alt="Kue 1">
+          <h3>Kue nastar</h3>
+          <p>Rp 100.000</p>
+        </div>
+
+        <div class="produk-item">
+          <img src="WhatsApp Image 2024-02-23 at 12.59.49.jpeg" alt="Kue 2">
+          <h3>Kue kastengal</h3>
+          <p>Rp 100.000</p>
+        </div>
+      <br>
+        <div class="produk-item">
+          <img src="Resep_Kue_Sagu_Keju.jpg" alt="Kue 2">
+          <h3>Kue sagu keju</h3>
+          <p>Rp 80.000</p>
+        </div>
+
+        <div class="produk-item">
+          <img src="palm-cheese-cookies-2323350275.webp" alt="Kue 2">
+          <h3>Kue palm chesee</h3>
+          <p>Rp 85.000</p>
+        </div>
+      <br>
+        <div class="produk-item">
+          <img src="resep-putri-salju-723133177.webp" alt="Kue 2">
+          <h3>Kue putri salju</h3>
+          <p>Rp 100.00</p>
+        </div>
+      <br>
+        <div class="produk-item">
+         <img src="kembang-goyang-b74d1885f2eb210c2cbb2d9a5ab0043f_600x400.jpg" alt="Kue 2">
+          <h3>Kue kembang goyang</h3>
+          <p>Rp 75.00</p>
+       </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Hak Cipta &copy; 2024 Penjualan Kue. All Rights Reserved.</p>
+  </footer>
+
+  <div class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Detail Pembelian</h2>
+      <p>Nama Kue: <span class="nama-kue"></span></p>
+      <p>Harga: Rp <span class="harga"></span></p>
+      <form id="checkout-form">
+        <label for="jumlah">Jumlah: </label>
+        <input type="number" id="jumlah" name="jumlah" min="1" required>
+        <button type="submit" class="btn-beli">Beli</button>
+      </form>
+    </div>
+  </div>
+
+  
+</body>
+</html>

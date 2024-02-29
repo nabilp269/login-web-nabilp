@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pembelian Barang</title>
+    <link rel="stylesheet" href="pembeli.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Pembelian Barang</h2>
+        <form id="purchaseForm">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" required>
+
+            <label for="email">Email/Tlp:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="barang">Barang yang dibeli:</label>
+            <input type="text" id="barang" name="barang" required>
+
+            <label for="jumlah">Jumlah:</label>
+            <input type="number" id="jumlah" name="jumlah" required>
+
+            <button type="button" onclick="sendEmail()">Beli</button>
+        </form>
+        <ul>
+            <a href="halaman.php">Beranda</a>
+          </ul>
+    </div>
+
+    <script src="pembeli.js"></script>
+</body>
+</html>
