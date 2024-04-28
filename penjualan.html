@@ -4,7 +4,89 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Penjualan Kue</title>
-  <link rel="stylesheet" href="penjualan.css">
+  <link rel="stylesheet" href="hal.css/pen.css">
+
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #ee1c1c;
+  color: #000000;
+  padding: 6.5vh;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #000000;
+  text-decoration: none;
+} 
+
+.produk {
+  padding: 50px 0;
+  background-color: #f9f9f9;
+}
+
+.produk .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.produk h2 {
+  margin-bottom: 6vh;
+}
+
+.produk-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.produk-item {
+  flex: 0 0 30%;
+  margin: 50px;
+  background-color: #f82727;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.produk-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.btn-beli:hover {
+  background-color: #ff6600;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+  </style>
+  
 </head>
 <body>
   <header>
@@ -12,6 +94,8 @@
     <nav>
       <ul>
         <li><a href="halaman.php">Beranda</a></li>
+        <li><a href="tentang.html">About</a></li>
+        <li><a href="pembeli.html">Order</a></li>
       </ul>
     </nav>
   </header>
@@ -19,7 +103,9 @@
   <section class="produk">
     <div class="container">
       <h2>Kue Kering Terbaik Kami</h2>
+
       <div class="produk-list">
+        
         <div class="produk-item">
           <img src="WhatsApp Image 2024-02-23 at 12.59.10.jpeg" alt="Kue 1">
           <h3>Kue nastar</h3>
@@ -59,24 +145,11 @@
     </div>
   </section>
 
-  <footer>
-    <p>Hak Cipta &copy; 2024 Penjualan Kue. All Rights Reserved.</p>
-  </footer>
+      <footer>
+        <p>Hak Cipta &copy; 2001 ERIAND COOKIES. All Rights Reserved.</p>
+      </footer>
 
-  <div class="modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <h2>Detail Pembelian</h2>
-      <p>Nama Kue: <span class="nama-kue"></span></p>
-      <p>Harga: Rp <span class="harga"></span></p>
-      <form id="checkout-form">
-        <label for="jumlah">Jumlah: </label>
-        <input type="number" id="jumlah" name="jumlah" min="1" required>
-        <button type="submit" class="btn-beli">Beli</button>
-      </form>
-    </div>
-  </div>
 
-  
+    
 </body>
 </html>

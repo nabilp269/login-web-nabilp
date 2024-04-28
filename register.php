@@ -1,5 +1,5 @@
 <?php
-    include "koneksi/database.php";
+    include "database.php";
     session_start();
 
 
@@ -34,23 +34,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/register-style.css">
+    <link rel="stylesheet" href="hal.css/register.css">
+
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main-register {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 2vh;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.main-register h3 {
+    text-align: center;
+    margin-bottom: 7vh;
+    color: #000000;
+}
+
+.main-register input[type="text"],
+.main-register input[type="password"],
+.main-register input[type="email"],
+.main-register button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 3vh;
+    border: 1px solid #ccc;
+    border-radius: 2vh;
+}
+
+.main-register button {
+    background-color: rgb(247, 88, 88);
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.main-register button:hover {
+    background-color: #45a049;
+}
+
+.main-register .message {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+    color: #000000;
+}
+
+.main-register .message a {
+    color:rgb(255, 44, 44);
+    text-decoration: none;
+}
+
+.main-register .message a:hover {
+    color: rgb(53, 255, 53);
+}
+
+    </style>
+
+    
     <title>Document</title>
 </head>
 <body>
     
+<center>
+    <br><br><br><br><br>
 <div class="main-register">
-    <h3>Daftar Akun s</h3>
+    <h3>Daftar Akun</h3>
     <form action="register.php" method="POST">
         <input type="text" placeholder="Username" name="username" required>
-        <br>
+        
         <input type="password" placeholder="Password" name="password" required>
-        <br>
+        
         <input type="email" placeholder="Email" name="email" required>
+               
         <button type="submit" name="register">Daftar Sekarang</button required>
-        <p class="message">Sudah punya akun? <a href="login.php">Masuk</a></p>
+        <p class="message">Sudah punya akun? <a href="login.php">Login</a></p>
     </form>
 </div>
+</center>
 
 </body>
 </html>
